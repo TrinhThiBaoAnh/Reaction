@@ -17,6 +17,7 @@
 !python3 train_ocr.py --config 'vgg_transformer' \
                       --data-root './dataset/ocr/data_line/' \
                       --test 'train_line_annotation.txt' \
+                      --weight './vietocr/weights/transformerocr.pth'
  ```
  ## Infer
  
