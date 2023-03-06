@@ -134,12 +134,19 @@ class Trainer():
                     self.save_weights(self.export_weights)
                     best_acc = acc_full_seq
 
-            
+    def test(self):
+        if self.valid_annotation and self.iter % self.valid_every == 0:
+            val_loss = self.validate()
+            acc_full_seq, acc_per_char = self.precision(self.metrics)
+
+            info = 'valid loss: {:.3f} - acc full seq: {:.4f} - acc per char: {:.4f}'.format(self.iter, val_loss, acc_full_seq, acc_per_char)
+            print(info)
+   
     def validate(self):
         self.model.eval()
 
         total_loss = []
-        
+        # print(len(self.valid_gen))
         with torch.no_grad():
             for step, batch in enumerate(self.valid_gen):
                 batch = self.batch_to_device(batch)
