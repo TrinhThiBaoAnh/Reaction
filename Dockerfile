@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 ####  Adding OCR models ####
 RUN mkdir -p /Reaction/vietocr/weights
 ADD https://drive.google.com/uc?id=1nTKlEog9YFK74kPyX0qLwCWi60_YHHk4 /Reaction/vietocr/weights
-#ADD https://drive.google.com/uc?id=13327Y1tz1ohsm5YZMyXVMPIOjoOA0OaA /Reaction/vietocr/weights
+ADD https://drive.google.com/uc?id=13327Y1tz1ohsm5YZMyXVMPIOjoOA0OaA /Reaction/vietocr/weights
