@@ -22,4 +22,8 @@
  ## Infer
  
  ```
+ python3 demo_ocr.py\
+        --img ${Path_to_your_image}\
+        --config ./config_vgg_transformer.yml \
+        --weight ./vietocr/weights/vgg_transformer.pth
  ```
