@@ -1,5 +1,5 @@
 # Reactionary Models
-Please put these models in ./vietocr/weights/
+
 
 | Backbone| Link |
 |--------------|-------|
@@ -7,7 +7,7 @@ Please put these models in ./vietocr/weights/
 | vgg_transformer |  https://drive.google.com/file/d/1-O7FnkW10WbHmXl51y2p-C9Q0b_kJ9Jw/view?usp=sharing|
 
 # Capcha Models
-Please put these models in ./vietocr/weights/
+
 
 | Backbone| Link |
 |--------------|-------|
