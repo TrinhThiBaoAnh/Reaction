@@ -26,9 +26,11 @@
                       --max-lr ${Learning_rate} \
                       --export {Path_to_your_weight} \
  ```
+ 
+ ###Example
 
 ```
-!python3 train_ocr.py --config 'config_vgg_transformer.' \
+!python3 train_ocr.py --config 'config_vgg_transformer.yml' \
                       --data-root './dataset/ocr/data_line/' \
                       --train 'train_line_annotation.txt' \
                       --test 'train_line_annotation.txt' \
@@ -38,6 +40,15 @@
                       --export './weights/transformerocr.pth' \
  ```
  ## Test
+ 
+  ```
+!python3 train_ocr.py --config ${Path_to_your_config_yml_file} \
+                      --data-root ${Path_to_your_dataset_folder} \
+                      --test ${Path_to_your_test_file} \
+                      --weight {Path_to_your_weight}
+ ```
+ 
+ ###Example
  
  ```
 !python3 train_ocr.py --config 'vgg_transformer' \
