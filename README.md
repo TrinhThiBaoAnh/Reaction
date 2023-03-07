@@ -17,6 +17,17 @@
 ## Train 
 
 ```
+!python3 train_ocr.py --config ${Path_to_your_config_yml_file} \
+                      --data-root ${Path_to_your_dataset_folder} \
+                      --train ${Path_to_your_train_file} \
+                      --test ${Path_to_your_test_file} \
+                      --num-epochs ${Num_epochs} \
+                      --batch-size ${Batch_size} \
+                      --max-lr ${Learning_rate} \
+                      --export {Path_to_your_weight} \
+ ```
+
+```
 !python3 train_ocr.py --config 'config_vgg_transformer.' \
                       --data-root './dataset/ocr/data_line/' \
                       --train 'train_line_annotation.txt' \
@@ -25,7 +36,6 @@
                       --batch-size 32 \
                       --max-lr 0.0003 \
                       --export './weights/transformerocr.pth' \
-                      --checkpoint './weights/transformerocr.pth'
  ```
  ## Test
  
