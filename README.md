@@ -27,7 +27,7 @@
                       --export {Path_to_your_weight} \
  ```
  
- ###Example
+ ### Example
 
 ```
 !python3 train_ocr.py --config 'config_vgg_transformer.yml' \
@@ -48,7 +48,7 @@
                       --weight {Path_to_your_weight}
  ```
  
- ###Example
+ ### Example
  
  ```
 !python3 train_ocr.py --config 'vgg_transformer' \
@@ -65,7 +65,7 @@
         --weight ${Path_to_your_weight}
  ```
 
-#Deploy
+# Deploy
 
 ```
 
