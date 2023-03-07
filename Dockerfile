@@ -1,7 +1,10 @@
 
 FROM pytorch/pytorch:1.13.0-cuda11.6-cudnn8-devel
 RUN pip3 install einops
-
+RUN pip3 install gdown
+RUN pip3 install matplotlib
+RUN pip3 install imgaug
+RUN pip3 install PyYAML
 RUN git clone -b ocr https://github.com/TrinhThiBaoAnh/Reaction.git
 WORKDIR /Reaction
 RUN pip install -r requirements.txt
