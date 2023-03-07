@@ -1,3 +1,19 @@
+# Reactionary Models
+Please put these models in ./vietocr/weights/
+
+| Backbone| Link |
+|--------------|-------|
+| vgg_seq2seq | https://drive.google.com/file/d/1-2ukNhfd_Wpg6qpmlFzKy6eXq1bqQgGz/view?usp=sharing|
+| vgg_transformer |  https://drive.google.com/file/d/1-O7FnkW10WbHmXl51y2p-C9Q0b_kJ9Jw/view?usp=sharing|
+
+# Capcha Models
+Please put these models in ./vietocr/weights/
+
+| Backbone| Link |
+|--------------|-------|
+| vgg_seq2seq | https://drive.google.com/file/d/1tTVpjYEb46ZkxrX_JztmSQbXEzKim4HO/view?usp=sharing|
+| vgg_transformer |  https://drive.google.com/file/d/1KFBlcJxZQ2u8uULyPIFRo-Y9-9CPPVqI/view?usp=sharing|
+
 ## Train 
 
 ```
